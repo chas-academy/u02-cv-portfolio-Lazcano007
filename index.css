@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+table {
+  width: 50%;
+  border-collapse: separate;
+  border-spacing: 10px;
+  margin: 20px;
+}
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background-color: #002fff;
+  border-radius: 100px;
+  padding: 20px 70px;
+}
+
+body {
+  background-image: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  background-repeat: no-repeat;
+  height: 100dvh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: groove;
+  border-radius: 100px;
+  text-align: center;
+}
+
+#projects {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: groove;
+  border-radius: 100px;
+  text-align: center;
+}
+#projects #vid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+#projects #vid-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#skills {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: groove;
+  border-radius: 100px;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: groove;
+  border-radius: 100px;
+}
+#contact img {
+  flex-direction: row;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 0px;
+}
+.intro .text-container {
+  max-width: auto;
+  text-align: left;
+}
+.intro .text-container .name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff002b;
+}
+
+.profil-image {
+  width: 250px;
+  height: auto;
+  margin-left: 15%;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 70px;
+  border-color: #002fff;
+}
+
+.section {
+  background-image: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-style: white;
+  color: white;
+}
+
+.mail {
+  padding: 50px;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #002fff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+.cv-button:hover {
+  background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar ul {
+  position: fixed;
+  list-style-type: none;
+  background-color: #002fff;
+  border-radius: 100px;
+  transition: background-color 0.5s ease;
+  font-size: 15px;
+  padding: 0px 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  position: sticky;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  transition: background-color 0.5s ease;
+  border-radius: 100px;
+}
+.navbar a:hover {
+  background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+  padding: 20px;
+}
+
+.back-home {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  padding: 10px 20px;
+  background-color: #002fff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.5s ease;
+}
+.back-home:hover {
+  background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+}
+
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  table {
+    width: 50%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin: 20px;
+  }
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+  }
+  table th {
+    background-color: #002fff;
+    border-radius: 100px;
+    padding: 20px 30px;
+  }
+  table td {
+    font-size: 20px;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 0px;
+  }
+  .intro .text-container {
+    max-width: auto;
+    text-align: left;
+    padding-left: 5px;
+  }
+  .intro .text-container .name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 38px;
+    color: #ff002b;
+  }
+  .profil-image {
+    width: 240px;
+    height: auto;
+    margin-left: 15%;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 60px;
+    border-color: rgba(0, 47, 255, 0.5960784314);
+  }
+  .navbar {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar ul {
+    position: fixed;
+    list-style-type: none;
+    background-color: #002fff;
+    border-radius: 100px;
+    transition: background-color 0.5s ease;
+    font-size: 15px;
+    padding: 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar a {
+    position: sticky;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    border-radius: 100px;
+    font-size: 13px;
+  }
+  .navbar a:hover {
+    background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+    padding: 20px;
+  }
+  #about p {
+    text-align: center;
+    font-size: 20px;
+  }
+  #projects p {
+    text-align: center;
+    font-size: 20px;
+  }
+  #contact {
+    font-size: 20px;
+    display: flex;
+  }
+  #contact img {
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="home" class="header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="intro">
+      <div class="text-container">
+        <h1>
+          Hello, I'm<br>
+          <span class="name"
+            >PEDRO <br>
+            LAZCANO</span>
+          <br>
+          I'm a full-stack developer
+        </h1>
+      </div>
+      <img
+        src="./bilder/Pedro2024.png"
+        alt="A picture of a handsome guy"
+        class="profil-image">
+    </div>
+    <main>
+      <section id="about">
+        <h2>ABOUT ME</h2>
+        <p>
+          Hello! My name is Pedro, I’m 27 years old, and I’m originally from
+          Bolivia. <br>
+          With a background in the restaurant industry, I’ve developed the
+          ability to handle multiple tasks at once, <br>
+          and I enjoy working in teams where clear communication is essential.
+          <br>
+          Solving various problems is something I'm passionate about, <br>
+          which is one of the reasons why studying to become a full-stack
+          developer at Chas Academy feels like the perfect path.<br>
+        </p>
+      </section>
+
+      <section id="projects">
+        <div id="vid-container">
+          <h2>PROJECTS</h2>
+          <video src="./Video/Hobby-page.mp4" controls>Hobby-page</video>
+          <p>
+            I created this project as a way to deepen my understanding of coding
+            while also sharing more about who I am and my interests. <br>
+            Through this project, I aim to showcase my skills and passion for
+            various activities I enjoy during my free time, from music
+            production to web design and beyond. <br>
+            My goal is not only to grow as a developer but also to provide a
+            glimpse into my personal interests and hobbies, which inspire me in
+            my coding journey.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>SKILLS</h2>
+        <table class="responsive-container">
+          <thead>
+            <tr>
+              <th scope="col">FRONT-END</th> <!-- scope klargör att varje <th> är en kolumn header (ANNARS är den inte användarvänligt) -->
+              <th scope="col">BACK-END</th>
+              <th scope="col">OTHER</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>C#</td>
+              <td>GITHUB</td>
+            </tr>
+            <tr>
+              <td>SASS</td>
+              <td></td>
+              <td>FIGMA</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td></td>
+              <td>VS CODE</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>CONTACT</h2>
+        <p>
+        Phone: +46 737 887 646
+        </p>
+        <div class="mail">
+          <form action="mailto:pedrolazcano@live.com" method="post">
+            <input placeholder="Message" type="text" name="message" >
+            <button type="submit">send</button>
+          </form>
+        </div>
+        <a href="./cv/Pedro_Lazcano%20CV2024.pdf" download class="cv-button"
+          >Download CV</a>
+          <br>
+
+          <footer >
+            <a href="https://www.linkedin.com/in/pedro-lazcano-347386202/">
+                <img alt="Linkedin Logo"
+                src="./bilder/LINKIN.png"></a>
+            <a href="https://github.com/Lazcano007"><img src="./bilder/GITHUB.png" alt="Github Logo"></a>
+          </footer>
+      </section>
+
+      <a href="#home" class="back-home">Home</a>
+    </main>
+  </body>
+</html>
