@@ -1,9 +1,8 @@
-@use "./animation.scss";
+@import "./animation.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 
 $purple: rgb(98, 0, 196) 11.2%;
-$lightpruple: rgb(150, 0, 205) 53.7%;
 $blue: rgb(42, 14, 198);
 $darkpink: #610d80;
 $pink: #db08ea;
@@ -46,7 +45,6 @@ body {
 }
 
 @keyframes bg {
-  100% { background-color: $lightpruple; }
   25% { background-color: $blue; }
   50% { background-color: $darkpink;}
   75% { background-color: $pink; }
@@ -141,7 +139,7 @@ table {
   padding: 0 0px;
 
   .text-container {
-    max-width: auto;
+    width: auto;
     text-align: left;
 
     .name {
@@ -171,7 +169,6 @@ table {
   background-image: $background-image;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
-  font-style: white;
   color: $font-color;
 }
 
@@ -287,7 +284,7 @@ table {
     padding: 0 0px;
 
     .text-container {
-      max-width: auto;
+      width: auto;
       text-align: left;
       padding-left: 5px;
 
