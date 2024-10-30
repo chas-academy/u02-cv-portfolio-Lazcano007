@@ -1,9 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 * {
   box-sizing: border-box;
   overflow: auto;
 }
 
+body {
+  background-image: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%);
+  background-repeat: no-repeat;
+  height: 100dvh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: radial-gradient(circle at bottom, rgb(98, 0, 196) 11.2%, transparent 100%), linear-gradient(to top, rgb(187, 0, 224) 0%, transparent 200%), linear-gradient(to bottom, transparent, rgb(10, 3, 214) 100%);
+  animation: bg 20s infinite;
+}
+
+@keyframes bg {
+  100% {
+    background-color: rgb(150, 0, 205) 53.7%;
+  }
+  25% {
+    background-color: rgb(42, 14, 198);
+  }
+  50% {
+    background-color: #610d80;
+  }
+  75% {
+    background-color: #db08ea;
+  }
+}
 table {
   width: 50%;
   border-collapse: separate;
@@ -19,17 +80,6 @@ table th {
   background-color: #002fff;
   border-radius: 100px;
   padding: 20px 70px;
-}
-
-body {
-  background-image: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
-  background-repeat: no-repeat;
-  height: 100dvh;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
 }
 
 #about {
@@ -116,10 +166,11 @@ body {
   border-width: 10px;
   border-radius: 70px;
   border-color: #002fff;
+  animation: float 3s ease-in-out infinite;
 }
 
 .section {
-  background-image: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  background-image: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%);
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
   font-style: white;
@@ -131,6 +182,7 @@ body {
 }
 
 .cv-button {
+  animation: wiggle 2s linear infinite;
   display: inline-block;
   background-color: #002fff;
   color: white;
@@ -140,10 +192,10 @@ body {
   cursor: pointer;
   font-size: 16px;
   text-decoration: none;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.4s ease;
 }
 .cv-button:hover {
-  background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+  background-color: red;
 }
 
 .navbar {
@@ -157,7 +209,6 @@ body {
   list-style-type: none;
   background-color: #002fff;
   border-radius: 100px;
-  transition: background-color 0.5s ease;
   font-size: 15px;
   padding: 0px 0px;
   margin: 0px;
@@ -176,7 +227,7 @@ body {
   border-radius: 100px;
 }
 .navbar a:hover {
-  background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+  background-image: linear-gradient(-225deg, #7000a3 0%, #7512ee 48%, #cc17ec 100%);
   padding: 20px;
 }
 
@@ -190,10 +241,10 @@ body {
   text-decoration: none;
   border-radius: 30px;
   font-family: "Poppins", sans-serif;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.4s ease;
 }
 .back-home:hover {
-  background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+  background-color: red;
 }
 
 @media (max-width: 600px) {
@@ -256,7 +307,6 @@ body {
     list-style-type: none;
     background-color: #002fff;
     border-radius: 100px;
-    transition: background-color 0.5s ease;
     font-size: 15px;
     padding: 0px 0px;
     margin: 0px;
@@ -275,7 +325,7 @@ body {
     font-size: 13px;
   }
   .navbar a:hover {
-    background-image: linear-gradient(-225deg, #ab29e7 0%, #7512ee 48%, #cc2be8 100%);
+    background-image: linear-gradient(-225deg, #7000a3 0%, #7512ee 48%, #cc17ec 100%);
     padding: 20px;
   }
   #about p {

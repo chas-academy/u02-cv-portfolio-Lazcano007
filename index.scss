@@ -1,22 +1,55 @@
+@use "./animation.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+$purple: rgb(98, 0, 196) 11.2%;
+$lightpruple: rgb(150, 0, 205) 53.7%;
+$blue: rgb(42, 14, 198);
+$darkpink: #610d80;
+$pink: #db08ea;
 
 $background-image: linear-gradient(
   109.6deg,
   rgba(9, 9, 121, 1) 11.2%,
-  rgba(144, 6, 161, 1) 53.7%,
-  rgba(0, 212, 255, 1) 100.2%
-);
+  rgba(144, 6, 161, 1) 53.7%,);
+
 $font-color: white;
+
 $backgroundhover-image: linear-gradient(
   -225deg,
-  #ab29e7 0%,
+  #7000a3 0%,
   #7512ee 48%,
-  #cc2be8 100%
+  #cc17ec 100%
 );
 
 * {
   box-sizing: border-box;
   overflow: auto;
+}
+
+
+body {
+  background-image: $background-image;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  font-family: "Poppins", sans-serif;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+  background: 
+    radial-gradient(circle at bottom, $purple, transparent 100%),    
+    linear-gradient(to top, rgb(187, 0, 224) 0%, transparent 200%),    
+    linear-gradient(to bottom, transparent, rgb(10, 3, 214) 100%);
+  animation: bg 20s infinite;
+}
+
+@keyframes bg {
+  100% { background-color: $lightpruple; }
+  25% { background-color: $blue; }
+  50% { background-color: $darkpink;}
+  75% { background-color: $pink; }
 }
 
 table {
@@ -37,18 +70,6 @@ table {
     padding: 20px 70px;
   }
 }
-
-body {
-  background-image: $background-image;
-  background-repeat: no-repeat;
-  height: 100dvh;
-  font-family: "Poppins", sans-serif;
-  color: $font-color;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
 #about {
   min-height: 100vh;
   display: flex;
@@ -131,6 +152,7 @@ body {
     }
   }
 }
+
 .profil-image {
   width: 250px;
   height: auto;
@@ -139,7 +161,10 @@ body {
   border-width: 10px;
   border-radius: 70px;
   border-color: #002fff;
+  animation: float 3s ease-in-out infinite;
 }
+
+
 
 .section {
   // Påverkar ALLA sectioner
@@ -155,6 +180,7 @@ body {
 }
 
 .cv-button {
+   animation: wiggle 2s linear infinite;
   display: inline-block;
   background-color: #002fff;
   color: white;
@@ -164,11 +190,12 @@ body {
   cursor: pointer;
   font-size: 16px;
   text-decoration: none;
-  transition: background-color 0.5s ease;
-
+  transition: background-color 0.4s ease;
+ 
   &:hover {
-    background-image: $backgroundhover-image;
+    background-color: red;
   }
+  
 }
 
 .navbar {
@@ -182,7 +209,7 @@ body {
   list-style-type: none;
   background-color: #002fff;
   border-radius: 100px;
-  transition: background-color 0.5s ease;
+
   font-size: 15px;
   padding: 0px 0px; // Ger space inuti ramen  (ta bort o testa om du glömmer)
   margin: 0px;
@@ -216,10 +243,10 @@ body {
   text-decoration: none;
   border-radius: 30px;
   font-family: "Poppins", sans-serif;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.4s ease;
 
   &:hover {
-    background-image: $backgroundhover-image;
+    background-color: red;
   }
 }
 
@@ -293,7 +320,6 @@ body {
     list-style-type: none;
     background-color: #002fff;
     border-radius: 100px;
-    transition: background-color 0.5s ease;
     font-size: 15px;
     padding: 0px 0px; // Ger utrymme inuti ramen
     margin: 0px;
