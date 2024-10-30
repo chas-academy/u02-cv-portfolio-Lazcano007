@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 
-$purple: rgb(98, 0, 196) 11.2%;
+$purple: rgb(87, 0, 174) 11.2%;
 $blue: rgb(42, 14, 198);
 $darkpink: #610d80;
 $pink: #db08ea;
@@ -38,9 +38,9 @@ body {
   scroll-behavior: smooth;
 
   background: 
-    radial-gradient(circle at bottom, $purple, transparent 100%),    
-    linear-gradient(to top, rgb(187, 0, 224) 0%, transparent 200%),    
-    linear-gradient(to bottom, transparent, rgb(10, 3, 214) 100%);
+    radial-gradient(circle at bottom, $purple, transparent 110%),    
+    linear-gradient(to top, rgb(187, 0, 224) 0%, transparent 280%),    
+    linear-gradient(to bottom, transparent, rgb(10, 3, 214) 80%);
   animation: bg 20s infinite;
 }
 
