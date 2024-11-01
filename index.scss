@@ -76,7 +76,11 @@ table {
   flex-direction: column;
   border-style: groove;
   border-radius: 100px;
-  text-align: center;
+  text-align: left ;
+  
+  p{
+    max-width: 500px;
+  }
 }
 
 #projects {
@@ -87,7 +91,7 @@ table {
   flex-direction: column;
   border-style: groove;
   border-radius: 100px;
-  text-align: center;
+  text-align: left;
 
   #vid-container {
     display: flex;
@@ -98,6 +102,12 @@ table {
       width: 100%;
       border-radius: 10px;
     }
+    p{
+
+      text-align: left;
+    }
+
+
   }
 
 }
@@ -121,16 +131,15 @@ table {
   border-style: groove;
   border-radius: 100px;
 
-  img{
+  img {
     flex-direction: row;
     width: 60px;
     height: 60px;
-    margin: 10px;
-   }
+    margin: 10px; 
+  }
 }
 
 // DETALJERADE KOMPONENTER NEDAN!!
-
 .intro {
   display: flex;
   align-items: center;
@@ -206,6 +215,7 @@ table {
   list-style-type: none;
   background-color: #002fff;
   border-radius: 100px;
+  z-index: 1;
 
   font-size: 15px;
   padding: 0px 0px; // Ger space inuti ramen  (ta bort o testa om du glömmer)
@@ -247,6 +257,14 @@ table {
   }
 }
 
+
+
+.skill-icon{
+  width: 30px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 
 // MEDIA QUERY
 @media (max-width: 600px) {
@@ -294,7 +312,9 @@ table {
         color: #ff002b;
       }
     }
+
   }
+
   .profil-image {
     width: 240px;
     height: auto;

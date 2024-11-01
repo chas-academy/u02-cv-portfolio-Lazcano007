@@ -87,7 +87,10 @@ table th {
   flex-direction: column;
   border-style: groove;
   border-radius: 100px;
-  text-align: center;
+  text-align: left;
+}
+#about p {
+  max-width: 500px;
 }
 
 #projects {
@@ -98,7 +101,7 @@ table th {
   flex-direction: column;
   border-style: groove;
   border-radius: 100px;
-  text-align: center;
+  text-align: left;
 }
 #projects #vid-container {
   display: flex;
@@ -109,6 +112,9 @@ table th {
 #projects #vid-container video {
   width: 100%;
   border-radius: 10px;
+}
+#projects #vid-container p {
+  text-align: left;
 }
 
 #skills {
@@ -205,6 +211,7 @@ table th {
   list-style-type: none;
   background-color: #002fff;
   border-radius: 100px;
+  z-index: 1;
   font-size: 15px;
   padding: 0px 0px;
   margin: 0px;
@@ -241,6 +248,13 @@ table th {
 }
 .back-home:hover {
   background-color: red;
+}
+
+.skill-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 @media (max-width: 600px) {
